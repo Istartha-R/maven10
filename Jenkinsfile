@@ -25,7 +25,7 @@ pipeline {
 
      stage('Archive') {
             steps {
-                archiveArtifacts artifacts: 'MavenAnsibleWebApp.war', fingerprint:true
+                archiveArtifacts artifacts: 'target/MavenAnsibleWebApp.war', fingerprint:true
             }
         }
         stage('Deploy') {
