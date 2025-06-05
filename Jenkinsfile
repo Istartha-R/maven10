@@ -31,7 +31,7 @@ pipeline {
         stage('Deploy') {
             steps {
                sh 'mvn clean package'  
-               sh 'ansible-direct/playbook.yml -i ansible/hosts.ini'
+               sh 'MavenAnsibleWebApp-direct/playbook.yml -i ansible/hosts.ini'
             }
         }
 
